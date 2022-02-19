@@ -21,4 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+### Terminal Commands
+
+* `rails g model Movie title description:text year:integer director`
+* `rails g model Actor name`
+* `rails g model MovieActor movie:references actor:references`
+* `rails g model Location place country`
+* `rails g model MovieLocation movie:references location:references`
+* `rails g model User name`
+* `rails g model Review stars:integer review:text movie:references user:references`
