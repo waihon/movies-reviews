@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Year</th>
+      <th>Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %> 
+      <tr>
+        <!-- Align content at middle vertically -->
+        <td class="align-middle"><%= movie.title %></td>
+        <td class="align-middle"><%= movie.description %></td>
+        <td class="align-middle"><%= movie.year %></td>
+        <td class="align-middle"><%= movie.director %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

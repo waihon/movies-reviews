@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get "import_data", to: "import_data#new"
   post "import_data", to: "import_data#create"
+
+  get "movies", to: "movies#index"
 end
