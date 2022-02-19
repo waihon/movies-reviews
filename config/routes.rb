@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   post "import_data", to: "import_data#create"
 
   get "movies", to: "movies#index"
+
+  get "new_search_actor", to: "search_actor#new"
+  post "search_actor", to: "search_actor#create"
+  resources :actors, only: [:show]
 end

@@ -1,0 +1,10 @@
+<%= form_with url: search_actor_path do |form| %>
+  <div class="mb-3">
+    <%= form.label :name%>
+    <%= form.text_field :name, class: "form-control", placeholder: "Nicolas Cage", autofocus: true %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Search Actor", class: "btn btn-primary" %>
+  </div>
+<% end%>

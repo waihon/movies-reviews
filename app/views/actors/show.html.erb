@@ -1,0 +1,10 @@
+<% if @actor %>
+  <%= @actor.name %>
+  <% if @actor.movies.any? %>
+    <ul>
+      <% @actor.movies.each do |movie| %>
+        <li><%= movie.title %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

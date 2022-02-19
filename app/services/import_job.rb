@@ -50,8 +50,8 @@ class ImportJob
         location.save
       end
 
-      movie.actors << actor
-      movie.locations << location
+      movie.actors << actor unless movie.actors.include?(actor)
+      movie.locations << location unless movie.locations.include?(location)
     end
   end
 
